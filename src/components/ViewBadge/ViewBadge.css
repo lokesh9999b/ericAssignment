@@ -1,0 +1,22 @@
+.view-badge {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 45;
+  padding: 6px 18px;
+  border-radius: var(--border-radius-full);
+  background: var(--bg-pill);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-sm);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.85;
+  transition: opacity var(--transition-base);
+}

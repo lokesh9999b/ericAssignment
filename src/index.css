@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ============================
+   Design Tokens
+   ============================ */
+:root {
+  /* Backgrounds */
+  --bg-app: #08080A;
+  --bg-sidebar: #0C0C0E;
+  --bg-overlay: rgba(12, 12, 14, 0.78);
+  --bg-overlay-solid: #131316;
+  --bg-pill: rgba(18, 18, 22, 0.82);
+  --bg-pill-light: rgba(245, 245, 245, 0.92);
+  --bg-pip: rgba(255, 255, 255, 0.88);
+  --bg-control: rgba(30, 30, 36, 0.85);
+  --bg-button-hover: rgba(255, 255, 255, 0.08);
+
+  /* Text */
+  --text-primary: #FFFFFF;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+  --text-dark: #111827;
+  --text-accent: #E5E7EB;
+
+  /* Accent Colors */
+  --accent-green: #22C55E;
+  --accent-green-soft: rgba(34, 197, 94, 0.15);
+  --accent-red: #EF4444;
+  --accent-red-dark: #DC2626;
+  --accent-yellow: #FACC15;
+  --accent-yellow-ring: #FDE047;
+  --accent-blue: #3B82F6;
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-pip: rgba(0, 0, 0, 0.15);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow-red: 0 0 24px rgba(239, 68, 68, 0.4);
+  --shadow-glow-green: 0 0 12px rgba(34, 197, 94, 0.3);
+
+  /* Spacing & Sizing */
+  --sidebar-width: 64px;
+  --status-bar-height: 48px;
+  --pip-width: 240px;
+  --pip-height: 170px;
+  --estop-size: 88px;
+  --dpad-size: 130px;
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+  --border-radius-full: 9999px;
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-xs: 0.65rem;
+  --font-size-sm: 0.75rem;
+  --font-size-base: 0.8125rem;
+  --font-size-md: 0.875rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.125rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================
+   CSS Reset
+   ============================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+}
+
+/* ============================
+   Utility Classes
+   ============================ */
+.glass {
+  background: var(--bg-pill);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-light {
+  background: var(--bg-pill-light);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-pip);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: var(--border-radius-full);
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}

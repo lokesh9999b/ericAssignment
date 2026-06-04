@@ -1,0 +1,111 @@
+/* ============================
+   Sidebar
+   ============================ */
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  z-index: 100;
+  flex-shrink: 0;
+}
+
+/* Logo */
+.sidebar__logo {
+  margin-bottom: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+}
+
+.sidebar__logo:hover {
+  opacity: 0.85;
+}
+
+.sidebar__logo-text {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.sidebar__logo-sub {
+  display: block;
+  font-size: 6px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.sidebar__nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.sidebar__nav-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-md);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.sidebar__nav-item:hover {
+  color: var(--text-primary);
+  background: var(--bg-button-hover);
+}
+
+.sidebar__nav-item--active {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar__nav-item--active::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 20px;
+  background: var(--text-primary);
+  border-radius: 0 2px 2px 0;
+}
+
+/* Profile */
+.sidebar__profile {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.sidebar__profile-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-md);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.sidebar__profile-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-button-hover);
+}
