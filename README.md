@@ -1,5 +1,7 @@
 # Insight.IO Dashboard — ERIC Robotics 🚀
 
+**🌍 Live Demo:** [https://eric-assignment.vercel.app](https://eric-assignment.vercel.app)
+
 Insight.IO is a high-performance, dark-themed robotics control dashboard designed to mimic a real-world telemetry and SLAM (Simultaneous Localization and Mapping) interface. This project was built as a frontend assignment to demonstrate modern UI development, 3D rendering, and responsive design.
 
 ---
