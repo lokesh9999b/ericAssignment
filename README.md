@@ -1,12 +1,12 @@
 # Insight.IO Dashboard — ERIC Robotics 🚀
 
-**🌍 Live Demo:** [https://eric-assignment.vercel.app](https://eric-assignment.vercel.app)
+** Live Demo:** [https://eric-assignment.vercel.app](https://eric-assignment.vercel.app)
 
 Insight.IO is a high-performance, dark-themed robotics control dashboard designed to mimic a real-world telemetry and SLAM (Simultaneous Localization and Mapping) interface. This project was built as a frontend assignment to demonstrate modern UI development, 3D rendering, and responsive design.
 
 ---
 
-## 🌟 Features Implemented
+## Features Implemented
 
 *   **Pixel-Perfect Dark Theme UI:** Strict adherence to the provided design mockup. Implements a responsive layout using modern CSS variables and flexbox, incorporating glassmorphism (`backdrop-filter`) for premium overlay effects.
 *   **3D Map View (Three.js):** 
@@ -23,7 +23,7 @@ Insight.IO is a high-performance, dark-themed robotics control dashboard designe
 
 ---
 
-## 🏗️ Technical Architecture & Choices
+##  Technical Architecture & Choices
 
 *   **React 18 & Vite:** Chosen for lightning-fast Hot Module Replacement (HMR) and a modular, component-based architecture. Vite significantly reduces build times compared to Webpack.
 *   **Three.js:** Used instead of generic canvas drawing to provide true 3D spatial rendering. It handles the complex math of orbiting and rendering point clouds effortlessly.
@@ -32,7 +32,7 @@ Insight.IO is a high-performance, dark-themed robotics control dashboard designe
 
 ---
 
-## 🛠️ Getting Started
+##  Getting Started
 
 Follow these instructions to build and run the project locally.
 
@@ -67,7 +67,7 @@ The application will be available in your browser at `http://localhost:5173/`.
 
 ---
 
-## 🎮 How to Test the Functionality
+##  How to Test the Functionality
 
 Once the app is running in your browser, try the following:
 1.  **Swap Views:** Click the small "Switch to Camera View" / "Switch to Map View" picture-in-picture window in the bottom left.
